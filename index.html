@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequence Memory Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="memory.png">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Sequence Memory Game</h1>
+        <p>Try to remember and replicate the growing pattern of button presses!</p>
+        
+        <!-- Level selection -->
+        <div id="level-selection">
+            <button onclick="startGame('beginner')">Beginner</button>
+            <button onclick="startGame('intermediate')">Intermediate</button>
+            <button onclick="startGame('pro')">Pro</button>
+        </div>
+        
+        <div class="button-container">
+            <!-- 9 buttons for the grid, no numbers now -->
+            <button class="game-button" id="btn1"></button>
+            <button class="game-button" id="btn2"></button>
+            <button class="game-button" id="btn3"></button>
+            <button class="game-button" id="btn4"></button>
+            <button class="game-button" id="btn5"></button>
+            <button class="game-button" id="btn6"></button>
+            <button class="game-button" id="btn7"></button>
+            <button class="game-button" id="btn8"></button>
+            <button class="game-button" id="btn9"></button>
+        </div>
+        
+        <div id="result"></div>
+
+        <!-- Start Over button (Initially hidden) -->
+        <button id="start-over-btn" onclick="startOver()" style="display: none;">Start Over</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
